@@ -47,3 +47,35 @@ The project follows the **Layered Architecture** pattern to ensure separation of
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/ce24-razjj/library-management-system.git](https://github.com/ce24-razjj/library-management-system.git)
+
+
+## 📖 API Documentation
+Once the application is running, the easiest way to explore and test the endpoints is through the automatically generated Swagger UI interface.
+
+👉 **Access Swagger UI:** `http://localhost:8080/swagger-ui/index.html`
+
+### Core Endpoints:
+| Method | Endpoint | Description | Access Level |
+| :--- | :--- | :--- | :--- |
+| `POST` | `/auth/register` | Register a new user account | Public |
+| `POST` | `/auth/login` | Authenticate and receive JWT | Public |
+| `GET` | `/books/page` | Retrieve paginated list of books | User / Admin |
+| `POST` | `/books/borrow/{id}`| Borrow a specific book | User / Admin |
+| `GET` | `/books/admin/overdue`| View all overdue borrow records | Admin Only |
+
+---
+
+## 🔮 Future Enhancements
+This project is actively maintained. Upcoming features include:
+* **Email Notifications:** Integrating Spring Mail to automatically notify users of upcoming return deadlines.
+* **Dockerization:** Creating a `Dockerfile` and `docker-compose.yml` to spin up the app and MySQL database with a single command.
+* **Advanced Analytics:** Adding endpoints to track the most popular books and calculate monthly library revenue from fines.
+
+---
+
+## 👤 Author
+**Pranav Raj**
+* **Education:** 2nd Year Undergraduate, IIT Dharwad
+* **LinkedIn:** [linkedin.com/in/pranav-raj-674364343](https://www.linkedin.com/in/pranav-raj-674364343/)
+* **LeetCode:** [leetcode.com/u/see_you_/](https://leetcode.com/u/see_you_/) (200+ Problems Solved)
+* **GitHub:** [github.com/ce24-razjj](https://github.com/ce24-razjj)
